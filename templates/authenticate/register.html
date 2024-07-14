@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="text-center mt-4 mb-4" margin-bottom-20px>
+    <h2 class="text-muted">Register</h2>
+</div>
+<div class="col-md-6 offset-md-3 mb-4">
+    <form action="{% url 'register' %}" method="POST" style="border: 1px solid #007BFF; padding: 15px; border-radius: 5px; margin-bottom: 100px">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-secondary">Register</button>
+    </form>
+</div>
+{% endblock content %}

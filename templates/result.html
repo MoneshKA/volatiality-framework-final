@@ -1,0 +1,60 @@
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Plugin Analysis Result</title>
+</head>
+<body>
+    <a href="{% url 'landing_page' %}">Back to Home</a>
+    <h1>Plugin Analysis Result</h1>
+    <p>{{ plugin_analysis.analysis_result }}</p>
+    <a href="{% url 'upload_plugin' %}">Upload another plugin</a>
+</body>
+</html> {% endcomment %}
+
+
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Plugin Analysis Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Plugin Analysis Result</h1>
+        <a href="{% url 'landing_page' %}" class="btn btn-secondary mb-3">Back to Home</a>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Analysis Result for: {{ plugin_analysis.plugin_folder.name }}</h5>
+                <p class="card-text">Plugin Name: {{ plugin_analysis.plugin_name }}</p>
+                <p class="card-text">{{ plugin_analysis.analysis_result }}</p>
+                <p class="card-text">Status: {{ plugin_analysis.status }}</p>
+                <p class="card-text">Created at: {{ plugin_analysis.created_at }}</p>
+                <p class="card-text">Completed at: {{ plugin_analysis.completed_at }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> {% endcomment %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plugin Analysis Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Plugin Analysis Result</h1>
+        <a href="{% url 'landing_page' %}" class="btn btn-secondary mb-3">Back to Home</a>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Analysis Result for: {{ plugin_analysis.plugin_folder.name }}</h5>
+                <p class="card-text">Plugin Name: {{ plugin_analysis.plugin_name }}</p>
+                <p class="card-text">{{ plugin_analysis.analysis_result }}</p>
+                <p class="card-text">Status: {{ plugin_analysis.status }}</p>
+                <p class="card-text">Created at: {{ plugin_analysis.created_at }}</p>
+                <p class="card-text">Completed at: {{ plugin_analysis.completed_at }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

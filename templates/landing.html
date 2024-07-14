@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plugin Analyzer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .btn-custom {
+            background-color: #e74c3c;
+            color: #fff;
+            border-color: #e74c3c;
+        }
+        .btn-custom:hover,
+        .btn-custom:focus {
+            background-color: #c0392b;
+            border-color: #c0392b;
+        }
+        .btn-custom:active {
+            background-color: #a93226;
+            border-color: #a93226;
+        }
+        .mt-3 {
+            margin-top: 1rem !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Welcome to Plugin Analyzer</h1>
+        <a href="{% url 'upload_plugin' %}" class="btn btn-custom mt-3">Upload Plugin</a>
+        <a href="{% url 'upload_memory_dump' %}" class="btn btn-custom mt-3">Upload Memory Dump</a>
+        <a href="{% url 'list_historical_analyses' %}" class="btn btn-custom mt-3">List Historical Analyses</a>
+    </div>
+</body>
+</html>
+
+
+
